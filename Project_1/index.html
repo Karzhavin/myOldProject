@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Межпланетный экспресс</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="normalize.css" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <meta name="keywords" content="почта, доставка, орбитальная, станция, космос">
+    <meta name="description" content="Транспортная компания «Межпланетный экспресс» осуществляет грузовые перевозки по всей Солнечной системе. Доставка грузов осуществляется собственным парком ракетопланов, космолётов и МТКК, переброска сборных грузов - закажите грузоперевозки прямо на сайте!">
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="header-fixed-container">
+        <div class="fixed-subcontainer">
+          <div class="logo-container">
+            <a href="index.html">
+              <img class="main-logo"
+                 src="images/main_logo_524.png"
+                 alt="Логотип компании «Межпланетный экспресс»">
+            </a>
+          </div>
+          <button class="menu-button hidden" type="button" name="menu-button">
+            <span class="material-symbols-outlined">
+              menu
+            </span>
+          </button>
+          <div class="main-menu">
+            <div class="company-name">Межпланетный экспресс</div>
+            <nav class="main-navigation">
+              <ul class="navigation-list">
+                <li class="nav-item home-link hidden">
+                  <a class="nav-link" href="index.html">
+                    <span class="material-symbols-outlined">
+                      home
+                    </span>
+                    <span>На главную</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span>Сервисы и услуги</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span>Спецпредложения</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span>Бонусная программа</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span>Общая информация</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span>Бизнес-партнёрам</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="user-bar">
+            <a class="nav-link login" href="adaptive.html">
+              <span>Авторизоваться</span>
+              <span class="material-symbols-outlined login-icon">
+                account_circle
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="page-main">
+      <h1 class="hidden">Главная страница компании «Межпланетный экспресс»</h1>
+      <article class="form-section">
+        <div class="view feedback-view">
+          <h2 class="form-view-title feedback-title">Оставить заявку</h2>
+          <form
+            class="feedback"
+            action="server/feedback.php"
+            method="post"
+            novalidate>
+            <div class="feedback-input-field">
+              <div class="feedback-label-input-group">
+                <label for="user-first-name">Имя:</label>
+                <input
+                  type="text"
+                  name="user-first-name"
+                  placeholder="Введите ваше имя&ast;"
+                  title="Пример: Пётр"
+                  id="user-first-name"
+                  required>
+              </div>
+              <div class="feedback-label-input-group">
+                <label for="user-last-name">Фамилия:</label>
+                <input
+                  type="text"
+                  name="user-last-name"
+                  placeholder="Введите вашу фамилию&ast;"
+                  title="Пример: Петров"
+                  id="user-last-name"
+                  required>
+              </div>
+              <div class="feedback-label-input-group">
+                <label for="user-datetime">Дата отправки:</label>
+                <input
+                  type="date"
+                  name="user-datetime"
+                  id="user-datetime"
+                  required>
+              </div>
+              <div class="feedback-label-input-group">
+                <label for="from-point">Откуда:</label>
+                <select class="from-point" name="from-point" id="from-point" required>
+                  <option value="">-</option>
+                  <option value="Earth-V">Космодром «Восточный»</option>
+                  <option value="Earth-B">Космодром «Байконур»</option>
+                  <option value="Earth-P">Космодром «Плесецк»</option>
+                  <option value="Earth-11">Орбитальная станция «Земля-11»</option>
+                  <option value="Mars-F">Станция «Марс-Фарсида»</option>
+                  <option value="Mars-1">Орбитальная станция «Марс-1»</option>
+                  <option value="Mars-3">Орбитальная станция «Марс-3»</option>
+                  <option value="Venus-6">Орбитальная станция «Венера-6»</option>
+                  <option value="Saturn-15">Орбитальная станция «Сатурн-15»</option>
+                </select>
+              </div>
+              <div class="feedback-label-input-group">
+                <label for="to-point">Куда:</label>
+                <select class="to-point" name="to-point" id="to-point" required>
+                  <option value="">-</option>
+                  <option value="Earth-V">Космодром «Восточный»</option>
+                  <option value="Earth-B">Космодром «Байконур»</option>
+                  <option value="Earth-P">Космодром «Плесецк»</option>
+                  <option value="Earth-11">Орбитальная станция «Земля-11»</option>
+                  <option value="Mars-F">Станция «Марс-Фарсида»</option>
+                  <option value="Mars-1">Орбитальная станция «Марс-1»</option>
+                  <option value="Mars-3">Орбитальная станция «Марс-3»</option>
+                  <option value="Venus-6">Орбитальная станция «Венера-6»</option>
+                  <option value="Saturn-15">Орбитальная станция «Сатурн-15»</option>
+                </select>
+              </div>
+              <div class="feedback-label-input-group">
+                <label for="user-email">Почта:</label>
+                <input
+                  type="email"
+                  name="user-email"
+                  placeholder="email@mail.com"
+                  autocomplete="email"
+                  title="Пример: "
+                  id="user-email"
+                  required>
+              </div>
+              <div class="feedback-label-input-group">
+                <label for="user-tel">Телефон:</label>
+                <input
+                  type="tel"
+                  name="user-tel"
+                  placeholder="+7-XXX-XXX-XX-XX"
+                  autocomplete="tel"
+                  title="Пример: +7-987-987-23-23 или +79879872323"
+                  id="user-tel"
+                  required>
+              </div>
+              <div class="feedback-label-input-group">
+                <label for="comment-field">Доп. информация к заявке:</label>
+                <textarea
+                  name="comment-field"
+                  id="comment-field"
+                  placeholder="Комментарий..."></textarea>
+              </div>
+              <div class="feedback-button-container">
+                <button type="submit" name="submit">Отправить</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="view distance-price-calculator-view">
+          <h2 class="form-view-title calculator-title">Калькулятор стоимости доставки</h2>
+          <div class="calc-parameters">
+            <div class="calculator-input-parameters">
+              <form class="calculator" action="index.html" method="post">
+                <div class="calculator-input-field input-distance">
+                  <div class="calculator-label-input-group">
+                    <label for="distance">Расстояние:</label>
+                    <input
+                      type="number"
+                      name="distance"
+                      placeholder="0"
+                      id="distance">
+                  </div>
+                  <span title="Астрономическая единица">а.е.*</span>
+                </div>
+                <div class="calculator-input-field input-weight">
+                  <div class="calculator-label-input-group">
+                    <label for="weight">Вес посылки:</label>
+                    <input
+                      type="number"
+                      name="weight-pack"
+                      placeholder="0"
+                      id="weight">
+                  </div>
+                  <span>тыс. кг</span>
+                </div>
+                <div class="calculator-additional-parameters">
+                  <label>
+                    <input
+                      type="checkbox"
+                      name="cargo-status"
+                      value="fragile"><span>Хрупкий груз</span>
+                  </label>
+                  <label>
+                    <input
+                      type="checkbox"
+                      name="delivery-status"
+                      value="ekspress"><span>Экспресс доставка</span>
+                  </label>
+                  <label>
+                    <input
+                      type="checkbox"
+                      name="insurance-status"
+                      value="full"><span>Полное страхование груза</span>
+                  </label>
+                </div>
+                <div class="calculator-button-container">
+                  <button type="button" name="calculate">
+                    <span>Расчитать</span>
+                    <span class="material-symbols-outlined calculate-button">
+                      attach_money
+                    </span>
+                  </button>
+                  <button type="reset" name="reset">
+                    <span>Сбросить</span>
+                    <span class="material-symbols-outlined reset-button">
+                      close
+                    </span>
+                  </button>
+                </div>
+                <div class="calculator-output-parameters">
+                  <label class="price-container">
+                    <input
+                      type="hidden"
+                      name="price"
+                      value="0"
+                      disabled>
+                    <span class="price-value">0</span>
+                    <span>₽</span>
+                  </label>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="view terminals-map-view">
+          <div class="points-container">
+            <h2 class="form-view-title terminals-map-view-title">Терминалы отправки грузов</h2>
+            <!-- <ul class="planet-switch">
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul> -->
+          </div>
+        </div>
+      </article>
+      <article class="spaceships-section">
+        <div class="spaceships-section-title-container">
+          <a class="title-link" href="#">
+            <h2 class="spaceships-section-title">Наш парк космолётов</h2>
+          </a>
+        </div>
+        <div class="spaceship-item">
+          <h3 class="spaceship-item-title">КоББ-22</h3>
+          <div class="spaceship-description">
+            <div class="spaceship-description-image-container">
+              <img src="images/spaceship_1.png" alt="Изображение космического корабля «КоББ-22»">
+            </div>
+            <table class="parameters-table">
+              <thead>
+                <tr>
+                  <th colspan="2">Лётно-технические характеристики</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Экипаж</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>Длина</td>
+                  <td>16,9 м</td>
+                </tr>
+                <tr>
+                  <td>Размах крыла</td>
+                  <td>11,36 м</td>
+                </tr>
+                <tr>
+                  <td>Высота</td>
+                  <td>5,23 м</td>
+                </tr>
+                <tr>
+                  <td>Объём грузового отсека</td>
+                  <td>150 м<sup>3</sup></td>
+                </tr>
+                <tr>
+                  <td>Максимальная взлётная масса</td>
+                  <td>351 534 кг</td>
+                </tr>
+                <tr>
+                  <td>Максимальная скорость</td>
+                  <td>258 940 км/ч</td>
+                </tr>
+                <tr>
+                  <td>Максимальная дальность полёта</td>
+                  <td>623 млн км</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="switch-panel">
+            <button type="button" name="button">
+              <span>Назад</span>
+              <span class="material-symbols-outlined arrow-back">
+                arrow_back_ios
+              </span>
+            </button>
+            <button type="button" name="button">
+              <span>Далее</span>
+              <span class="material-symbols-outlined arrow-forward">
+                arrow_forward_ios
+              </span>
+            </button>
+          </div>
+        </div>
+      </article>
+    </main>
+    <footer class="page-footer">
+      <div class="common-info">
+        <h2 class="footer-title hidden">Общая информация</h2>
+        <section class="contacts">
+          <h3>Контакты</h3>
+          <ul class="contacts-list">
+            <li>
+              <a href="#">Адреса и контакты</a>
+            </li>
+            <li>
+              <a class="contacts-phone" href="tel:+78001230022">+7 (800) 123-00-22</a>
+            </li>
+          </ul>
+        </section>
+        <section class="company-info">
+          <h3>Компания</h3>
+          <ul class="company-info-list">
+            <li>
+              <a href="#">О компании</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+            <li>
+              <a href="#">Работа в Межпланетном экспрессе</a>
+            </li>
+            <li>
+              <a href="#">Карта сайта</a>
+            </li>
+          </ul>
+        </section>
+        <section class="partners">
+          <h3>Партнерам</h3>
+          <ul class="partners-list">
+            <li>
+              <a href="#">Агентам</a>
+            </li>
+            <li>
+              <a href="#">Группа Межпланетный экспресс</a>
+            </li>
+            <li>
+              <a href="#">Поставщикам</a>
+            </li>
+            <li>
+              <a href="#">Акционерам и инвесторам</a>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <div class="copyright-division">
+        <p>&copy; ГК «Межпланетный экспресс», 2043–2062</p>
+      </div>
+    </footer>
+    <script src="scripts/responsiveMainNavigation.js" type="text/javascript"></script>
+    <script src="scripts/formValidate.js" type="text/javascript"></script>
+  </body>
+</html>

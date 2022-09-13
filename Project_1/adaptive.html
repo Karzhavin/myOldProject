@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Межпланетный экспресс</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="normalize.css" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="loginStyle.css" type="text/css">
+    <meta name="keywords" content="почта, доставка, орбитальная, станция, космос">
+    <meta name="description" content="Транспортная компания «Межпланетный экспресс» осуществляет грузовые перевозки по всей Солнечной системе. Доставка грузов осуществляется собственным парком ракетопланов, космолётов и МТКК, переброска сборных грузов - закажите грузоперевозки прямо на сайте!">
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="header-fixed-container">
+        <div class="fixed-subcontainer">
+          <div class="logo-container">
+            <a href="index.html">
+              <img class="main-logo"
+                 src="images/main_logo_524.png"
+                 alt="Логотип компании «Межпланетный экспресс»">
+            </a>
+          </div>
+          <button class="menu-button hidden" type="button" name="menu-button">
+            <span class="material-symbols-outlined">
+              menu
+            </span>
+          </button>
+          <div class="main-menu">
+            <div class="company-name">Межпланетный экспресс</div>
+            <nav class="main-navigation">
+              <ul class="navigation-list">
+                <li class="nav-item home-link hidden">
+                  <a class="nav-link" href="index.html">
+                    <span class="material-symbols-outlined">
+                      home
+                    </span>
+                    <span>На главную</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span>Сервисы и услуги</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span>Спецпредложения</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span>Бонусная программа</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span>Общая информация</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span>Бизнес-партнёрам</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="user-bar">
+            <a class="nav-link login" href="adaptive.html">
+              <span>Авторизоваться</span>
+              <span class="material-symbols-outlined login-icon">
+                account_circle
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="page-view">
+      <h1 class="hidden">Окно входа в личный кабинет пользователя</h1>
+      <aside class="last-news-bar">
+        <ul class="last-news-list">
+          <li class="last-news-item">
+            <p>Позаботьтесь о безопасности Вашего груза</p>
+            <a href="#">Узнайте, как обезопасить груз</a>
+          </li>
+        </ul>
+      </aside>
+      <main class="page-main">
+        <article class="login-view">
+          <h2 class="title login-view-title">Вход в личный кабинет</h2>
+          <form class="login-form" action="index.html" method="post">
+            <div class="user-data-input">
+              <div class="user-data-item">
+                <label for="username">Логин:</label>
+                <input
+                  type="text"
+                  name="username"
+                  placeholder="Телефон или email"
+                  value=""
+                  id="username">
+              </div>
+              <div class="user-data-item">
+                <label for="userpass">Пароль:</label>
+                <input
+                  type="password"
+                  name="userpass"
+                  placeholder="Пароль"
+                  value=""
+                  id="userpass">
+                <a href="#">Забыли пароль?</a>
+              </div>
+            </div>
+            <button type="submit" name="button">Войти</button>
+          </form>
+        </article>
+        <article class="loyalty-program">
+          <h2 class="title loyalty-program-title">
+            Вступить в бонусную программу «Экспресс Плюс»
+          </h2>
+          <ul class="loyalty-program-list">
+            <li class="loyalty-program-item">
+              <a class="loyalty-item-link" href="#">
+                <span class="material-symbols-outlined">
+                  group_add
+                </span>
+                <p>
+                  Стать участником программы
+                </p>
+              </a>
+            </li>
+            <li class="loyalty-program-item">
+              <a class="loyalty-item-link" href="#">
+                <span class="material-symbols-outlined">
+                  credit_score
+                </span>
+                <p>
+                  Активировать временную карту
+                </p>
+              </a>
+            </li>
+            <li class="loyalty-program-item">
+              <a class="loyalty-item-link" href="#">
+                <span class="material-symbols-outlined">
+                  badge
+                </span>
+                <p>
+                  Активировать личный кабинет
+                </p>
+              </a>
+            </li>
+          </ul>
+        </article>
+        <article class="common-info-for-clients">
+          <ul class="common-info-list">
+            <li class="common-info-item">
+              <a class="common-info-link" href="#">
+                <span class="material-symbols-outlined">
+                  paid
+                </span>
+                <p class="common-info-item-title">
+                  Получайте бонусы за посылки и грузы
+                </p>
+                <p class="common-info-item-text">
+                  И приобретайте на них товары и услуги, которые предоставляют
+                  наши партнёры по всей Солнечной системе
+                </p>
+              </a>
+            </li>
+            <li class="common-info-item">
+              <a class="common-info-link" href="#">
+                <span class="material-symbols-outlined">
+                  rocket_launch
+                </span>
+                <p class="common-info-item-title">
+                  Будьте в курсе лучших предложений
+                </p>
+                <p class="common-info-item-text">
+                  Узнавайте первым о самых новых и выгодных предложениях компании
+                </p>
+              </a>
+            </li>
+            <li class="common-info-item">
+              <a class="common-info-link" href="#">
+                <span class="material-symbols-outlined">
+                  diamond
+                </span>
+                <p class="common-info-item-title">
+                  Элитный клуб «Экспресс Плюс»
+                </p>
+                <p class="common-info-item-text">
+                  Отправляйте грузы чаще, повышайте свой уровень в программе и
+                  получайте уникальные привилегии
+                </p>
+              </a>
+            </li>
+          </ul>
+        </article>
+      </main>
+    </div>
+    <footer class="page-footer">
+      <div class="common-info">
+        <h2 class="footer-title hidden">Общая информация</h2>
+        <section class="contacts">
+          <h3>Контакты</h3>
+          <ul class="contacts-list">
+            <li>
+              <a href="#">Адреса и контакты</a>
+            </li>
+            <li>
+              <a class="contacts-phone" href="tel:+78001230022">+7 (800) 123-00-22</a>
+            </li>
+          </ul>
+        </section>
+        <section class="company-info">
+          <h3>Компания</h3>
+          <ul class="company-info-list">
+            <li>
+              <a href="#">О компании</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+            <li>
+              <a href="#">Работа в Межпланетном экспрессе</a>
+            </li>
+            <li>
+              <a href="#">Карта сайта</a>
+            </li>
+          </ul>
+        </section>
+        <section class="partners">
+          <h3>Партнерам</h3>
+          <ul class="partners-list">
+            <li>
+              <a href="#">Агентам</a>
+            </li>
+            <li>
+              <a href="#">Группа Межпланетный экспресс</a>
+            </li>
+            <li>
+              <a href="#">Поставщикам</a>
+            </li>
+            <li>
+              <a href="#">Акционерам и инвесторам</a>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <div class="copyright-division">
+        <p>&copy; ГК «Межпланетный экспресс», 2043–2062</p>
+      </div>
+    </footer>
+    <script src="scripts/responsiveMainNavigation.js" type="text/javascript"></script>
+  </body>
+</html>

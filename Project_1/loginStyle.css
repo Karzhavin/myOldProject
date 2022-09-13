@@ -1,0 +1,262 @@
+/* page-view */
+
+.page-view {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100vw;
+  max-width: 80rem;
+
+  padding: 1rem;
+  padding-bottom: 0;
+
+  color: rgb(135, 135, 135);
+}
+
+@media (max-width: 600px) {
+  .page-view {
+    flex-direction: column;
+  }
+}
+
+/* page-main */
+
+.page-main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 1rem;
+
+  width: 100%;
+
+  border-bottom: 2px solid rgb(155, 155, 155);
+  color: rgb(10, 10, 10);
+}
+
+@media (max-width: 600px) {
+  .page-main {
+    grid-template-columns: 1fr;
+    padding-top: 1rem;
+  }
+}
+
+.page-main .title {
+  font-weight: normal;
+}
+
+/* last-news-bar */
+
+.last-news-bar {
+  align-self: flex-start;
+  margin-right: 1rem;
+}
+
+.last-news-list {
+  margin: 0;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 15px;
+  box-shadow: inset 0 0 3px 0 rgb(155, 155, 155);
+
+  list-style-type: none;
+}
+
+.last-news-item p {
+  margin: 0;
+  margin-bottom: 0.5rem;
+
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+}
+
+.last-news-item a {
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+  text-decoration: none;
+  color: #1d2b64;
+}
+
+.last-news-item a:hover {
+  filter: opacity(0.7);
+}
+
+/* login-view */
+
+.login-view {
+  position: relative;
+  margin: 0;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 15px;
+  box-shadow: inset 0 0 3px 0 rgb(155, 155, 155);
+}
+
+.login-view-title {
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-data-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-data-item {
+  margin-bottom: 1rem;
+}
+
+.user-data-item label {
+  margin-bottom: 0.5rem;
+}
+
+.user-data-item input {
+  margin: 0;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  border: 1px solid rgb(235, 235, 235);
+  border-radius: 5px;
+}
+
+.user-data-item a {
+  align-self: flex-end;
+  padding: 0.1rem 0;
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+  text-decoration: none;
+  color: #1d2b64;
+}
+
+.user-data-item a:hover {
+  filter: opacity(0.7);
+}
+
+.login-form button {
+  margin: 0;
+  padding: 0.5rem;
+  background: var(--mango-color);
+  border: 1px solid rgb(235, 235, 235);
+  border-radius: 5px;
+
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.7)
+}
+
+.login-form button:hover {
+  cursor: pointer;
+  color: rgba(255, 255, 255, 1)
+}
+
+/* loyalty-program */
+
+.loyalty-program {
+  display: flex;
+  flex-direction: column;
+
+  margin-left: 1rem;
+}
+
+.loyalty-program-list {
+  display: flex;
+
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.loyalty-program-item {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+
+.loyalty-program-item:first-child {
+  padding-left: 0;
+}
+
+.loyalty-program-item:last-child {
+  padding-right: 0;
+}
+
+@media (max-width: 400px) {
+  .loyalty-program {
+    margin-left: 0;
+  }
+  .loyalty-program-list {
+    flex-direction: column;
+  }
+  .loyalty-program-item:first-child {
+    padding-left: 0.5rem;
+  }
+  .loyalty-program-item:last-child {
+    border-bottom: 2px solid rgb(155, 155, 155);
+  }
+}
+
+.loyalty-item-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.loyalty-item-link:hover {
+  filter: opacity(0.5);
+}
+
+.loyalty-program-item .material-symbols-outlined {
+  font-size: 48px;
+}
+
+/* common-info-for-clients */
+
+.common-info-for-clients {
+  grid-column: 2 span;
+
+  color: rgb(135, 135, 135);
+}
+
+.common-info-list {
+  display: flex;
+
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+@media (max-width: 930px)  {
+  .common-info-for-clients {
+    grid-column: 1;
+  }
+  .common-info-list {
+    flex-direction: column;
+  }
+}
+
+.common-info-item {
+  padding: 0.5rem;
+}
+
+.common-info-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.common-info-link:hover {
+  color: rgb(10, 10, 10);
+}
+
+
+.common-info-item .material-symbols-outlined {
+  font-size: 48px;
+}
+
+.common-info-item-title {
+
+}
+
+.common-info-item-text {
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+}
